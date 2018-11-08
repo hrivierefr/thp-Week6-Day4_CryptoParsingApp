@@ -1,0 +1,6 @@
+<div class='offset-4 col-4 text-center'>
+	<%= form_for :selection, method: 'patch', url: { action: 'update'} do |f| %>
+	  	<%= f.collection_select :id, Currency.all, :id, :name, {:include_blank=> "Select a Currency"} %>
+	  	<%= f.submit 'Show quotation', class: 'form-group m-auto btn btn-info'%>
+	<% end %>
+</div>

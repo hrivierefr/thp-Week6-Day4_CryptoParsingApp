@@ -1,0 +1,13 @@
+<table class="table text-center my-2 mx-auto col-6">
+	<thead>
+		<td>Currency name</td>
+		<td>Quotation</td>
+	</thead>
+	<tr>
+		<td><%= @selected_currency.name %></td>
+		<td><%= @selected_currency.quotation %></td>
+	</tr>
+</table>
+<p class='text-right font-italic font-weight-light'>Quotation updated on: <%= @selected_currency.created_at %>
+<br/>
+<%= render 'selection_form' %>
