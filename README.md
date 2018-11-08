@@ -10,3 +10,6 @@ after git clone, run :
 $ bundle install
 $ rails db:migrate
 $ rails s
+
+
+Le Lag initial au chargement de la page d'accueil est dû à l'actualisation des cours des crypto-monnaies
